@@ -1,0 +1,28 @@
+  <button (click)="queueClicked()">Queue New</button>
+  Id: <input type="number" [(ngModel)]="jobStateId">
+  <button (click)="cancelClicked()">Cancel</button><button (click)="pauseClicked()">Pause</button><button (click)="resumeClicked()">Resume</button>
+<br><br>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Progress</th>
+    <th>Details</th>
+    <th>Status</th>
+    <th>OwnerId</th>
+    <th>ProjectId</th>
+    <th>CreationTime</th>
+    <th>ModificationTime</th>
+    <th>CompletionTime</th>
+  </tr>
+  <tr *ngFor='let job of signalRService.jobs | keyvalue'>
+    <td>{{job.key}}</td>
+    <td>{{job.value.progress}}</td>
+    <td>{{job.value.details}}</td>
+    <td>{{job.value.status}}</td>
+    <td>{{job.value.ownerId}}</td>
+    <td>{{job.value.projectId}}</td>
+    <td>{{job.value.creationTime}}</td>
+    <td>{{job.value.modificationTime}}</td>
+    <td>{{job.value.completionTime}}</td>
+  </tr>
+</table>

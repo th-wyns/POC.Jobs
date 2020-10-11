@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>State storage core functionalities.</Description>
+    <TargetFramework>$(LibraryTargetFramework)</TargetFramework>
+    <RootNamespace>$(ProjectNamespace).Jobs.State.Storage</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>jobs;state;storage;core</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\POC.Jobs.Core.csproj" />
+    <ProjectReference Include="..\State.Communication.Core\POC.Jobs.State.Communication.Core.csproj" />
+  </ItemGroup>
+
+</Project>

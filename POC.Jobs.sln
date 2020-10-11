@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.Core", "src\Core\POC.Jobs.Core.csproj", "{0614F1D4-73B5-4F64-A419-3314D949BCB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.Agent.Core", "src\Agent.Core\POC.Jobs.Agent.Core.csproj", "{83AA3202-3251-4920-96AD-B9CE23796647}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.Manager.Core", "src\Manager.Core\POC.Jobs.Manager.Core.csproj", "{4DA42586-143A-4373-9FC8-7A6BFC1E6855}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.Manager.Hangfire", "src\Manager.Hangfire\POC.Jobs.Manager.Hangfire.csproj", "{A66180CC-DE75-4897-B8AC-7A1BDE35FBC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.State.Storage.Core", "src\State.Storage.Core\POC.Jobs.State.Storage.Core.csproj", "{13C3C4A3-F5AF-4367-A887-131C7895A798}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.State.Storage.EntityFrameworkCore", "src\State.Storage.EntityFrameworkCore\POC.Jobs.State.Storage.EntityFrameworkCore.csproj", "{74CE24A3-CB84-4778-A501-9D934DE6D4C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.State.Communication.Core", "src\State.Communication.Core\POC.Jobs.State.Communication.Core.csproj", "{CC55F1A0-DD0D-48DB-803E-EE8F81B96B09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.State.Communication.SignalR", "src\State.Communication.SignalR\POC.Jobs.State.Communication.SignalR.csproj", "{5040D805-E4AD-4AF8-8CAB-B6EE67D5FE02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.Agent", "src\Agent\POC.Jobs.Agent.csproj", "{FEBF49C7-C05D-48FE-8F73-CD99AD8014B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Jobs.Agent.Hangfire-SignalR", "src\Agent.Hangfire-SignalR\POC.Jobs.Agent.Hangfire-SignalR.csproj", "{D2E4C912-677E-43E6-B47C-A759884F5890}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0614F1D4-73B5-4F64-A419-3314D949BCB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0614F1D4-73B5-4F64-A419-3314D949BCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0614F1D4-73B5-4F64-A419-3314D949BCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0614F1D4-73B5-4F64-A419-3314D949BCB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83AA3202-3251-4920-96AD-B9CE23796647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83AA3202-3251-4920-96AD-B9CE23796647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83AA3202-3251-4920-96AD-B9CE23796647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83AA3202-3251-4920-96AD-B9CE23796647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA42586-143A-4373-9FC8-7A6BFC1E6855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA42586-143A-4373-9FC8-7A6BFC1E6855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA42586-143A-4373-9FC8-7A6BFC1E6855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA42586-143A-4373-9FC8-7A6BFC1E6855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A66180CC-DE75-4897-B8AC-7A1BDE35FBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66180CC-DE75-4897-B8AC-7A1BDE35FBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66180CC-DE75-4897-B8AC-7A1BDE35FBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66180CC-DE75-4897-B8AC-7A1BDE35FBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C3C4A3-F5AF-4367-A887-131C7895A798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C3C4A3-F5AF-4367-A887-131C7895A798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C3C4A3-F5AF-4367-A887-131C7895A798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C3C4A3-F5AF-4367-A887-131C7895A798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CE24A3-CB84-4778-A501-9D934DE6D4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CE24A3-CB84-4778-A501-9D934DE6D4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CE24A3-CB84-4778-A501-9D934DE6D4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CE24A3-CB84-4778-A501-9D934DE6D4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC55F1A0-DD0D-48DB-803E-EE8F81B96B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC55F1A0-DD0D-48DB-803E-EE8F81B96B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC55F1A0-DD0D-48DB-803E-EE8F81B96B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC55F1A0-DD0D-48DB-803E-EE8F81B96B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5040D805-E4AD-4AF8-8CAB-B6EE67D5FE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5040D805-E4AD-4AF8-8CAB-B6EE67D5FE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5040D805-E4AD-4AF8-8CAB-B6EE67D5FE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5040D805-E4AD-4AF8-8CAB-B6EE67D5FE02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBF49C7-C05D-48FE-8F73-CD99AD8014B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBF49C7-C05D-48FE-8F73-CD99AD8014B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBF49C7-C05D-48FE-8F73-CD99AD8014B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBF49C7-C05D-48FE-8F73-CD99AD8014B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E4C912-677E-43E6-B47C-A759884F5890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E4C912-677E-43E6-B47C-A759884F5890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E4C912-677E-43E6-B47C-A759884F5890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E4C912-677E-43E6-B47C-A759884F5890}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E669A63-5C79-4E2D-B72A-F4C48556DBE5}
+	EndGlobalSection
+EndGlobal

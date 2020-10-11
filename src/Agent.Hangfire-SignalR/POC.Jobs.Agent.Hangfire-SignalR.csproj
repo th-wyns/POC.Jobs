@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Hangfire and SignalR based job agent functionalities.</Description>
+    <TargetFramework>$(LibraryTargetFramework)</TargetFramework>
+    <RootNamespace>$(ProjectNamespace).Jobs.Agent.HangfireSignalR</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>jobs;agent;hangfire;signalr</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsLoggingAbstractionsVersion)" />
+
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="$(SerilogEnrichersEnvironmentVersion)" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="$(SerilogEnrichersThreadVersion)" />
+    <PackageReference Include="Serilog.Exceptions" Version="$(SerilogExceptionsVersion)" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="$(SerilogExtensionsHostingVersion)" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="$(SerilogSettingsConfigurationVersion)" />
+    <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="$(SerilogSinksColoredConsoleVersion)" />
+    <PackageReference Include="serilog.sinks.elasticsearch" Version="$(SerilogSinksElasticSearchVersion)" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="$(SerilogSinksRollingFileVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Agent.Core\POC.Jobs.Agent.Core.csproj" />
+    <ProjectReference Include="..\Core\POC.Jobs.Core.csproj" />
+    <ProjectReference Include="..\Manager.Hangfire\POC.Jobs.Manager.Hangfire.csproj" />
+    <ProjectReference Include="..\State.Communication.SignalR\POC.Jobs.State.Communication.SignalR.csproj" />
+    <ProjectReference Include="..\State.Storage.Core\POC.Jobs.State.Storage.Core.csproj" />
+    <ProjectReference Include="..\State.Storage.EntityFrameworkCore\POC.Jobs.State.Storage.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

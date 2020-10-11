@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Job manager core functionalities.</Description>
+    <TargetFramework>$(LibraryTargetFramework)</TargetFramework>
+    <RootNamespace>$(ProjectNamespace).Jobs.Manager</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>jobs;manager;core</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Agent.Core\POC.Jobs.Agent.Core.csproj" />
+    <ProjectReference Include="..\Core\POC.Jobs.Core.csproj" />
+    <ProjectReference Include="..\State.Storage.Core\POC.Jobs.State.Storage.Core.csproj" />
+  </ItemGroup>
+
+</Project>
