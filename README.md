@@ -47,7 +47,7 @@ The solution has a sample for the Hangfire-SignalR-MsSql implementation in the *
 1. Open command prompt
 2. Navigate to **artifacts\Debug\POC.Jobs.Samples\ServerApi\netcoreapp3.1**
 3. Run **POC.Jobs.Samples.ServerApi.exe**
-4. Ensure the Web Api is running by opening a web browser and nevigate to **https://localhost:5001/api/job**
+4. Ensure the Web Api is running by opening a web browser and navigate to **https://localhost:5001/api/job**
 
 ## Agent
 1. Open command prompt
